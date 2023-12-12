@@ -1,15 +1,6 @@
 const navigationController = {
-  getHome: (req, res, next) => {
-    res.render("index", { title: "Fran Generator" });
-  },
-  getPacho: (req, res, next) => {
-    res.render("index", { title: "Controller Pacho 2" });
-  },
-  getPacho2: (req, res, next) => {
-    res.render("index", { title: "Fran Generator" });
-  },
-  getEnoc: (req, res, next) => {
-    res.render("index", { title: "Fran Generator" });
+  getData: async (req, res, next) => {
+    res.send("Hola mundo");
   },
 };
 
